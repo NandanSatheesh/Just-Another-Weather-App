@@ -10,6 +10,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.core.app.ActivityCompat;
 import androidx.databinding.DataBindingUtil;
+import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.google.android.gms.location.FusedLocationProviderClient;
 import com.google.android.gms.location.LocationCallback;
@@ -100,6 +101,10 @@ public class WeatherReportController extends MvpController<WeatherReportContract
 	public void setContent(WeatherApiResponse response) {
 		binding.currentTemperature.setText(String.format("%s%s C", response.current.tempC, DEGREE));
 		binding.placeName.setText(response.location.name);
+		WeatherFutureForecastAdapter adapter = new WeatherFutureForecastAdapter();
+		adapter.updateData(response.forecast.forecastday.subList(1, response.forecast.forecastday.size()));
+		binding.futureForecast.setLayoutManager(new LinearLayoutManager(getApplicationContext()));
+		binding.futureForecast.setAdapter(adapter);
 	}
 
 	public void requestPermission() {
