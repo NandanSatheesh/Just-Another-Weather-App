@@ -16,6 +16,7 @@ public class WeatherReportPresenter implements WeatherReportContract.Presenter {
 
 	private CompositeDisposable compositeDisposable;
 	private APIService service;
+	private WeatherReportContract.View view;
 
 	@Inject
 	public WeatherReportPresenter(APIService service) {
@@ -23,8 +24,10 @@ public class WeatherReportPresenter implements WeatherReportContract.Presenter {
 		compositeDisposable = new CompositeDisposable();
 	}
 
-	public void getWeatherForcastData() {
-		service.getWeatherData(NetworkUtil.API_KEY, "Bangalore", 4)
+	public void getWeatherForcastData(String city, int days) {
+		view.hideContentView();
+		view.showLoadingView();
+		service.getWeatherData(NetworkUtil.API_KEY, city, days)
 				.subscribeOn(Schedulers.io())
 				.observeOn(AndroidSchedulers.mainThread())
 				.subscribe(new Observer<WeatherApiResponse>() {
@@ -35,8 +38,9 @@ public class WeatherReportPresenter implements WeatherReportContract.Presenter {
 
 					@Override
 					public void onNext(WeatherApiResponse weatherApiResponse) {
-
-
+						view.hideLoadingView();
+						view.showContentView();
+						view.setContent(weatherApiResponse);
 					}
 
 					@Override
@@ -54,7 +58,7 @@ public class WeatherReportPresenter implements WeatherReportContract.Presenter {
 
 	@Override
 	public void attachView(WeatherReportContract.View view) {
-
+		this.view = view;
 	}
 
 	@Override
@@ -64,11 +68,11 @@ public class WeatherReportPresenter implements WeatherReportContract.Presenter {
 
 	@Override
 	public void detachView() {
-
+		view = null;
 	}
 
 	@Override
 	public void destroy() {
-
+		compositeDisposable.clear();
 	}
 }

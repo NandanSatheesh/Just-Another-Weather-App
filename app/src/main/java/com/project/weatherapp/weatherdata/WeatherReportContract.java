@@ -2,6 +2,7 @@ package com.project.weatherapp.weatherdata;
 
 import com.hannesdorfmann.mosby3.mvp.MvpPresenter;
 import com.hannesdorfmann.mosby3.mvp.MvpView;
+import com.project.weatherapp.models.WeatherApiResponse;
 
 public interface WeatherReportContract {
 
@@ -15,7 +16,7 @@ public interface WeatherReportContract {
 
 		void hideContentView();
 
-		void setContent(String response);
+		void setContent(WeatherApiResponse response);
 
 	}
 
