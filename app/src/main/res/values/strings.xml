@@ -1,3 +1,4 @@
 <resources>
-	<string name="app_name">weatherapp</string>
+	<string name="app_name">Just Another Weather App</string>
+	<string name="loading_data_text_label">Loading Data...</string>
 </resources>

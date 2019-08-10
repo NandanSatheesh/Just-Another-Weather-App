@@ -1,6 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<color name="colorPrimary">#008577</color>
-	<color name="colorPrimaryDark">#00574B</color>
-	<color name="colorAccent">#D81B60</color>
+	<color name="colorPrimary">#FFC107</color>
+	<color name="colorPrimaryDark">#FFA000</color>
+	<color name="backgroundcolor">#fcfcfc
+	</color>
+	<color name="grey_light">#ededed</color>
+	<color name="deeppurple">#7c4dff</color>
+	<color name="yellow_dark">#ffb300</color>
+	<color name="green">#00bfa5</color>
+	<color name="colorAccent">#FF4081</color>
+	<color name="redBright">#d0021b</color>
+	<color name="red_inline_error">#ff550d</color>
+
+	<color name="yellow_lemon">#efef32</color>
+
+	<color name="pink">#f4f</color>
+	<color name="pink_light">#ede9e9</color>
+	<color name="pink_very_light">#d5d5d5</color>
+
+	<color name="white">#FFFFFFFF</color>
+
+	<color name="blue">#1127b4</color>
+	<color name="blue_dark">#0f229d</color>
+	<color name="blue_dark_sky">#4a90e2</color>
+
+	<color name="grey_very">#ededed</color>
+	<color name="grey_very_dark">#202020</color>
+	<color name="grey_dark">#3f3f3f</color>
+	<color name="grey_medium_light">#B1B1B1</color>
+	<color name="grey_very_light">#ececec</color>
+	<color name="grey_moderate">#b3bac8</color>
+
+	<color name="black">#FF000000</color>
+	<color name="black_60pc">#99000000</color>
+
+	<color name="green_light">#7ed321</color>
 </resources>

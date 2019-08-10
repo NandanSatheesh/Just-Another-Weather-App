@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="bottom_navigation_indicator_height">4dp</dimen>
+
+	<dimen name="bottom_navigation_tab_bar_height">72dp</dimen>
+
+	<!-- Text Sizes-->
+	<dimen name="text_size_extra_large">20sp</dimen>
+	<dimen name="text_size_large">18sp</dimen>
+	<dimen name="text_size_semi_large">16sp</dimen>
+	<dimen name="text_size_normal">12sp</dimen>
+	<dimen name="text_size_small">10sp</dimen>
+
+	<!-- Spacings -->
+	<dimen name="spacing_normal">16dp</dimen>
+	<dimen name="spacing_tiny">2dp</dimen>
+	<dimen name="spacing_small">8dp</dimen>
+	<dimen name="spacing_extra_small">4dp</dimen>
+	<dimen name="spacing_large">24dp</dimen>
+	<dimen name="spacing_slightly_large">32dp</dimen>
+	<dimen name="spacing_extra_large">64dp</dimen>
+	<dimen name="spacing_moderate">12dp</dimen>
+
+	<!-- Icon Sizes -->
+	<dimen name="icon_size_normal">24dp</dimen>
+	<dimen name="icon_size_medium">28dp</dimen>
+	<dimen name="icon_size_large">48dp</dimen>
+	<dimen name="dialog_elevation">4dp</dimen>
+	<dimen name="divider_thin">1dp</dimen>
+
+	<!-- Shape Sizes -->
+	<dimen name="shape_size_small">3dp</dimen>
+	<dimen name="shape_size_tiny">1dp</dimen>
+	<dimen name="shape_size_extra_large">48dp</dimen>
+
+
+	<!-- Badge Sizes -->
+	<dimen name="badge_size">20dp</dimen>
+	<dimen name="badge_text_size">10sp</dimen>
+	<dimen name="badge_padding">3dp</dimen>
+
+	<!-- Action Menu Item Sizes -->
+	<dimen name="menu_icon_padding">2dp</dimen>
+	<dimen name="menu_icon_size">32dp</dimen>
+	<dimen name="corner_radius_button_large">6dp</dimen>
+	<dimen name="corner_radius_button_small">3dp</dimen>
+	<dimen name="corner_radius_bottom_sheet">10dp</dimen>
+
+	<dimen name="corner_radius_outline_button">4dp</dimen>
+	<dimen name="stroke_width_outline_button">1dp</dimen>
+	<dimen name="corner_radius_search_view_border">4dp</dimen>
+
+	<dimen name="action_bar_size_large">80dp</dimen>
+</resources>
